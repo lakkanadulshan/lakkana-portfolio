@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Dulshan</h1>
+<h1 align="center">Hi 👋, I'm Lakkana Dulshan</h1>
 <h3 align="center">A passionate Full Stack Developer (MERN | Java Spring Boot | WordPress) from Sri Lanka</h3>
 
 - 📫 How to reach me: **jldweerarathne@gmail.com**
