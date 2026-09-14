@@ -1,5 +1,5 @@
-<h1 align="center">Hi , I'm Lakkana Dulshan</h1>
-<h3 align="center">A passionate Full Stack / Frontend Developer from Sri Lanka</h3>
+<h1 align="center">Hi 👋, I'm Dulshan</h1>
+<h3 align="center">A passionate Full Stack Developer (MERN | Java Spring Boot | WordPress) from Sri Lanka</h3>
 
 - 📫 How to reach me: **jldweerarathne@gmail.com**
 
@@ -22,7 +22,7 @@
       <td width="55%" valign="top">
         <h3>Languages and Tools:</h3>
         <p>
-          <img src="https://skillicons.dev/icons?i=angular,ts,js,html,css,bootstrap,tailwind,java,python,git,github,vscode" />
+          <img src="https://skillicons.dev/icons?i=angular,react,nodejs,express,mongodb,java,spring,wordpress,ts,js,html,css,bootstrap,tailwind,git,github,vscode" />
         </p>
       </td>
       <!-- Illustration Image -->
