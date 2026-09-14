@@ -1,16 +1,34 @@
-## Hi there 👋
+<h1 align="center">Hi 👋, I'm Dulshan</h1>
+<h3 align="center">A passionate Full Stack / Frontend Developer from Sri Lanka</h3>
 
-<!--
-**lakkanadulshan/lakkanadulshan** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+- 📫 How to reach me: **jldweerarathne@gmail.com**
 
-Here are some ideas to get you started:
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+  <a href="https://www.linkedin.com/in/lakkana-dulshan-a83995318" target="_blank">
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="linkedin" height="30" width="40" />
+  </a>
+  <a href="https://web.facebook.com/lakkanad.weerarathne/" target="_blank">
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="facebook" height="30" width="40" />
+  </a>
+</p>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+<div align="left">
+  <table border="0">
+    <tr>
+      <!-- Skills Icons -->
+      <td width="55%" valign="top">
+        <h3>Languages and Tools:</h3>
+        <p>
+          <img src="https://skillicons.dev/icons?i=angular,ts,js,html,css,bootstrap,tailwind,java,python,git,github,vscode" />
+        </p>
+      </td>
+      <!-- Illustration Image -->
+      <td width="45%" align="center">
+        <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg" alt="Coding" width="100%" />
+      </td>
+    </tr>
+  </table>
+</div>
