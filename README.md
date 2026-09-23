@@ -15,20 +15,7 @@
 
 ---
 
-<div align="left">
-  <table border="0">
-    <tr>
-      <!-- Skills Icons -->
-      <td width="55%" valign="top">
-        <h3>Languages and Tools:</h3>
-        <p>
-          <img src="https://skillicons.dev/icons?i=angular,react,nodejs,express,mongodb,java,spring,wordpress,ts,js,html,css,bootstrap,tailwind,git,github,vscode" />
-        </p>
-      </td>
-      <!-- Illustration Image -->
-      <td width="45%" align="center">
-        <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg" alt="Coding" width="100%" />
-      </td>
-    </tr>
-  </table>
-</div>
+<h3 align="left">Languages and Tools:</h3>
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=angular,react,nodejs,express,mongodb,java,spring,wordpress,ts,js,html,css,bootstrap,tailwind,git,github,vscode" />
+</p>
