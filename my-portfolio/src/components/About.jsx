@@ -1,47 +1,57 @@
-import React from 'react';
-import { Server, Layout, Cloud, CheckCircle2 } from 'lucide-react';
+import React from "react";
+import { Server, Layout, Cloud, CheckCircle2 } from "lucide-react";
 
 export default function About() {
-  const highlights = [
-    {
-      icon: <Server className="text-sky-400" size={24} />,
-      title: "Backend & Systems",
-      desc: "Specialized in Java, Spring Boot microservices, secure RESTful APIs, and relational data modeling.",
-    },
-    {
-      icon: <Layout className="text-indigo-400" size={24} />,
-      title: "Modern Frontend",
-      desc: "Engineering reactive and responsive web interfaces using Angular, React, and Tailwind CSS.",
-    },
-    {
-      icon: <Cloud className="text-emerald-400" size={24} />,
-      title: "Cloud & DevOps",
-      desc: "Experience with AWS core infrastructure, Linux environments, Git version control, and CI/CD pipelines.",
-    },
-    {
-      icon: <CheckCircle2 className="text-purple-400" size={24} />,
-      title: "Clean Architecture",
-      desc: "Committed to OOP standards, SOLID principles, testing practices, and high-performance design.",
-    },
-  ];
+const highlights = [
+  {
+    icon: <Server className="text-[#a3e635]" size={22} />,
+    title: "Java & Spring Boot",
+    desc: "Building scalable backend services with Java, Spring Boot, REST APIs, JPA, MySQL, and microservice architecture.",
+  },
+  {
+    icon: <Layout className="text-[#a3e635]" size={22} />,
+    title: "Full-Stack Development",
+    desc: "Developing modern web applications with the MERN stack, Angular, React, and Tailwind CSS.",
+  },
+  {
+    icon: <Cloud className="text-[#a3e635]" size={22} />,
+    title: "Cloud & DevOps",
+    desc: "Hands-on experience with AWS, Linux, Git, and CI/CD, with a growing focus on cloud native development.",
+  },
+  {
+    icon: <CheckCircle2 className="text-[#a3e635]" size={22} />,
+    title: "Software Engineering",
+    desc: "Applying OOP, SOLID principles, layered architecture, clean code, and maintainable design across projects.",
+  },
+];
 
   return (
-    <section id="about" className="py-24 px-6 max-w-6xl mx-auto border-t border-slate-800/80">
-      <div className="flex flex-col lg:flex-row gap-12 items-start justify-between">
-        
+    <section
+      id="about"
+      className="py-28 px-6 sm:px-10 max-w-7xl mx-auto border-t border-neutral-900 bg-[#0a0a0a]"
+    >
+      <div className="flex flex-col lg:flex-row gap-14 lg:gap-16 items-start justify-between">
         {/* Left Side: Summary */}
         <div className="lg:w-1/2">
-          <span className="text-sky-400 font-mono text-sm tracking-wider uppercase font-semibold">
-            01. About Me
+          <span className="text-[#84cc16] font-mono text-xs sm:text-sm tracking-widest uppercase font-semibold">
+            // 01. About Me
           </span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mt-3 mb-6 tracking-tight leading-snug">
-            Engineering reliable backends with a clean, end-to-end perspective.
+
+          <h2 className="text-3xl sm:text-5xl font-extrabold text-white mt-4 mb-6 tracking-tight leading-[1.15]">
+            Engineering reliable backends with a clean, scalable, end-to-end approach.
           </h2>
-          <p className="text-slate-400 text-base leading-relaxed mb-4">
-            I am an undergraduate passionate about designing resilient software systems. My core expertise lies in architecting backend services with Java and Spring Boot, paired with hands-on experience in modern frontend development using Angular and React.
+
+          <p className="text-neutral-400 font-mono text-sm sm:text-base leading-relaxed mb-5">
+            I’m an undergraduate software developer focused on building
+            scalable, reliable, and maintainable systems. I specialize in Java
+            and Spring Boot backend development, with practical experience in
+            Angular and React.{" "}
           </p>
-          <p className="text-slate-400 text-base leading-relaxed">
-            I enjoy transforming complex requirements into maintainable, production-ready code. Always eager to explore cloud native patterns, optimize system throughput, and contribute to impactful engineering teams.
+
+          <p className="text-neutral-400 font-mono text-sm sm:text-base leading-relaxed">
+            Passionate about clean architecture, cloud-native technologies, and
+            performance optimization, I strive to turn complex ideas into
+            production ready software.{" "}
           </p>
         </div>
 
@@ -50,15 +60,20 @@ export default function About() {
           {highlights.map((item, index) => (
             <div
               key={index}
-              className="p-5 rounded-xl bg-slate-900/40 border border-slate-800 hover:border-slate-700 transition-all duration-300 hover:-translate-y-1 hover:bg-slate-900/70"
+              className="p-6 rounded-2xl bg-[#111111] border border-neutral-800/80 hover:border-[#84cc16]/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_25px_rgba(132,204,22,0.08)] group"
             >
-              <div className="mb-3 p-2 rounded-lg bg-slate-800/60 w-fit">{item.icon}</div>
-              <h3 className="text-white font-semibold text-base mb-1.5">{item.title}</h3>
-              <p className="text-slate-400 text-xs leading-relaxed">{item.desc}</p>
+              <div className="mb-4 p-2.5 rounded-xl bg-neutral-900 border border-neutral-800 w-fit group-hover:border-[#84cc16]/30 transition-colors">
+                {item.icon}
+              </div>
+              <h3 className="text-white font-bold text-base mb-2 group-hover:text-[#a3e635] transition-colors">
+                {item.title}
+              </h3>
+              <p className="text-neutral-400 text-xs sm:text-sm font-mono leading-relaxed">
+                {item.desc}
+              </p>
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

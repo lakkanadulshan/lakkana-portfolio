@@ -4,59 +4,59 @@ import { Mail, MapPin, Send, ArrowUpRight } from 'lucide-react';
 export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert('Message sent successfully!');
+    alert('Thank you! Your message has been sent successfully.');
   };
 
   return (
-    <section id="contact" className="py-24 px-6 max-w-6xl mx-auto border-t border-slate-800/80">
-      <div className="mb-12">
-        <span className="text-sky-400 font-mono text-sm tracking-wider uppercase font-semibold">
-          04. What's Next
+    <section id="contact" className="py-28 px-6 sm:px-10 max-w-7xl mx-auto border-t border-neutral-900 bg-[#0a0a0a]">
+      <div className="mb-14">
+        <span className="text-[#84cc16] font-mono text-xs sm:text-sm tracking-widest uppercase font-semibold">
+          // 04. What's Next
         </span>
-        <h2 className="text-3xl sm:text-4xl font-bold text-white mt-3 tracking-tight">
+        <h2 className="text-3xl sm:text-5xl font-extrabold text-white mt-4 tracking-tight">
           Get In Touch
         </h2>
-        <p className="mt-3 text-slate-400 max-w-xl text-base">
-          Main nayi internship opportunities aur collaborations ke liye open hoon. Chahe koi question ho ya bas connect karna chahein, message zaroor karein!
+        <p className="mt-4 text-neutral-400 font-mono text-sm sm:text-base max-w-xl">
+          I am actively seeking software engineering internship opportunities. Whether you have a question, an opportunity, or just want to connect, feel free to reach out!
         </p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
         {/* Left Side: Contact Information */}
         <div className="space-y-6">
-          <div className="flex items-center gap-4 p-4 rounded-xl bg-slate-900/40 border border-slate-800">
-            <div className="p-3 rounded-lg bg-sky-500/10 text-sky-400">
+          <div className="flex items-center gap-4 p-5 rounded-2xl bg-[#111111] border border-neutral-800/80 hover:border-[#84cc16]/40 transition-colors">
+            <div className="p-3 rounded-xl bg-neutral-900 border border-neutral-800 text-[#a3e635]">
               <Mail size={22} />
             </div>
             <div>
-              <p className="text-xs text-slate-400 font-medium">Email Address</p>
-              <a href="mailto:your-email@example.com" className="text-white font-medium hover:text-sky-400 transition-colors">
-                your-email@example.com
+              <p className="text-xs text-neutral-500 font-mono uppercase tracking-wider">Email Address</p>
+              <a href="mailto:jldweerarathne@gmail.com" className="text-white font-medium hover:text-[#a3e635] transition-colors">
+                jldweerarathne@gmail.com
               </a>
             </div>
           </div>
 
-          <div className="flex items-center gap-4 p-4 rounded-xl bg-slate-900/40 border border-slate-800">
-            <div className="p-3 rounded-lg bg-indigo-500/10 text-indigo-400">
+          <div className="flex items-center gap-4 p-5 rounded-2xl bg-[#111111] border border-neutral-800/80 hover:border-[#84cc16]/40 transition-colors">
+            <div className="p-3 rounded-xl bg-neutral-900 border border-neutral-800 text-[#a3e635]">
               <MapPin size={22} />
             </div>
             <div>
-              <p className="text-xs text-slate-400 font-medium">Location</p>
+              <p className="text-xs text-neutral-500 font-mono uppercase tracking-wider">Location</p>
               <p className="text-white font-medium">Sri Lanka</p>
             </div>
           </div>
 
-          <div className="p-6 rounded-2xl bg-gradient-to-br from-slate-900/60 to-slate-900/20 border border-slate-800">
-            <h3 className="text-white font-semibold text-lg mb-2">Social Profiles</h3>
-            <p className="text-slate-400 text-sm mb-4">
-              Mera technical work aur activity yahan dekhein:
+          <div className="p-6 rounded-2xl bg-[#111111] border border-neutral-800/80">
+            <h3 className="text-white font-bold text-lg mb-2">Connect Online</h3>
+            <p className="text-neutral-400 text-sm font-mono mb-5">
+              Explore my technical repositories and professional profile:
             </p>
             <div className="flex flex-wrap gap-3">
               <a
-                href="https://github.com"
+                href="https://github.com/lakkanadulshan"
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center gap-2 px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-medium transition-all"
+                className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-neutral-900 hover:bg-neutral-800 text-neutral-200 hover:text-white border border-neutral-800 hover:border-[#84cc16]/40 text-xs font-mono font-medium transition-all"
               >
                 GitHub <ArrowUpRight size={14} />
               </a>
@@ -64,7 +64,7 @@ export default function Contact() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center gap-2 px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-medium transition-all"
+                className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-neutral-900 hover:bg-neutral-800 text-neutral-200 hover:text-white border border-neutral-800 hover:border-[#84cc16]/40 text-xs font-mono font-medium transition-all"
               >
                 LinkedIn <ArrowUpRight size={14} />
               </a>
@@ -73,40 +73,40 @@ export default function Contact() {
         </div>
 
         {/* Right Side: Message Form */}
-        <form onSubmit={handleSubmit} className="p-8 rounded-2xl bg-slate-900/40 border border-slate-800 space-y-4">
+        <form onSubmit={handleSubmit} className="p-8 rounded-2xl bg-[#111111] border border-neutral-800/80 space-y-5">
           <div>
-            <label className="block text-xs font-medium text-slate-300 mb-2">Your Name</label>
+            <label className="block text-xs font-mono text-neutral-400 mb-2">Your Name</label>
             <input
               type="text"
               required
               placeholder="e.g. John Doe"
-              className="w-full px-4 py-3 rounded-xl bg-slate-950/60 border border-slate-800 focus:border-sky-500 text-white placeholder-slate-500 text-sm outline-none transition-all"
+              className="w-full px-4 py-3 rounded-xl bg-neutral-900 border border-neutral-800 focus:border-[#84cc16] text-white placeholder-neutral-600 text-sm font-mono outline-none transition-all"
             />
           </div>
 
           <div>
-            <label className="block text-xs font-medium text-slate-300 mb-2">Email Address</label>
+            <label className="block text-xs font-mono text-neutral-400 mb-2">Email Address</label>
             <input
               type="email"
               required
               placeholder="e.g. john@example.com"
-              className="w-full px-4 py-3 rounded-xl bg-slate-950/60 border border-slate-800 focus:border-sky-500 text-white placeholder-slate-500 text-sm outline-none transition-all"
+              className="w-full px-4 py-3 rounded-xl bg-neutral-900 border border-neutral-800 focus:border-[#84cc16] text-white placeholder-neutral-600 text-sm font-mono outline-none transition-all"
             />
           </div>
 
           <div>
-            <label className="block text-xs font-medium text-slate-300 mb-2">Message</label>
+            <label className="block text-xs font-mono text-neutral-400 mb-2">Message</label>
             <textarea
               rows="4"
               required
               placeholder="Type your message here..."
-              className="w-full px-4 py-3 rounded-xl bg-slate-950/60 border border-slate-800 focus:border-sky-500 text-white placeholder-slate-500 text-sm outline-none transition-all resize-none"
+              className="w-full px-4 py-3 rounded-xl bg-neutral-900 border border-neutral-800 focus:border-[#84cc16] text-white placeholder-neutral-600 text-sm font-mono outline-none transition-all resize-none"
             ></textarea>
           </div>
 
           <button
             type="submit"
-            className="w-full py-3.5 px-6 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-semibold text-sm flex items-center justify-center gap-2 transition-all shadow-md shadow-sky-500/10 cursor-pointer"
+            className="w-full py-4 px-6 rounded-xl bg-[#65a30d] hover:bg-[#84cc16] text-white font-bold text-sm flex items-center justify-center gap-2 transition-all duration-300 shadow-[0_0_25px_rgba(101,163,13,0.45)] hover:shadow-[0_0_35px_rgba(132,204,22,0.7)] cursor-pointer"
           >
             Send Message <Send size={16} />
           </button>
@@ -114,9 +114,11 @@ export default function Contact() {
       </div>
 
       {/* Clean Footer */}
-      <footer className="mt-24 pt-8 border-t border-slate-800/60 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
-        <p>© {new Date().getFullYear()} Personal Portfolio. All rights reserved.</p>
-        <p>Built with React & Tailwind CSS</p>
+      <footer className="mt-28 pt-8 border-t border-neutral-900 flex flex-col sm:flex-row items-center justify-between text-xs font-mono text-neutral-500 gap-4">
+        <p>© {new Date().getFullYear()} Lakkana Dulshan. All rights reserved.</p>
+        {/* <p className="flex items-center gap-1.5">
+          Built with React & Tailwind CSS
+        </p> */}
       </footer>
     </section>
   );
