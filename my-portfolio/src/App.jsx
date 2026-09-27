@@ -6,6 +6,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Certifications from './components/Certification';
 import Contact from './components/Contact';
+import ScrollProgressRoute from './components/ScrollProgressRoute';
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Skills />
         <Projects />
         <Certifications />
+        <ScrollProgressRoute />
         <Contact />
       </main>
     </div>

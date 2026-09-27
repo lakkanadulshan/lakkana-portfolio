@@ -16,7 +16,7 @@ export default function Navbar() {
         
         {/* Logo */}
         <a href="#" className="text-xl font-bold tracking-tight text-white flex items-center gap-1.5">
-          Portfolio<span className="w-1.5 h-1.5 rounded-full bg-[#84cc16]"></span>
+          Lakkana<span className="w-1.5 h-1.5 rounded-full bg-[#84cc16]"></span>
         </a>
 
         {/* Links */}

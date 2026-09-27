@@ -48,15 +48,12 @@ export default function Hero() {
 
   return (
     <section className="relative bg-[#0a0a0a] text-white pt-36 pb-20 px-6 sm:px-10 max-w-7xl mx-auto min-h-screen flex flex-col justify-between overflow-hidden">
-      
       {/* =========================================================
           HERO MAIN CONTENT (SPLIT LAYOUT)
       ========================================================== */}
       <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12 lg:gap-16 w-full my-auto">
-        
         {/* Left Column: Heading, Subtitle & Action Buttons */}
         <div className="lg:w-7/12 flex flex-col items-start text-left z-10">
-          
           <h1 className="text-5xl sm:text-7xl font-extrabold tracking-tight text-white leading-[1.08]">
             Lakkana Dulshan
           </h1>
@@ -64,18 +61,21 @@ export default function Hero() {
           {/* Typing Role subtitle */}
           <div className="min-h-[36px] mt-4 flex items-center gap-2.5 text-lg sm:text-2xl font-mono text-[#a3e635]">
             <Terminal size={22} className="text-[#84cc16] shrink-0" />
-            <span className="font-semibold tracking-tight">{displayedText}</span>
+            <span className="font-semibold tracking-tight">
+              {displayedText}
+            </span>
             <span className="w-0.5 h-6 bg-[#84cc16] animate-pulse shrink-0"></span>
           </div>
 
           {/* Intro Description */}
           <p className="mt-6 text-base sm:text-lg text-neutral-400 font-mono max-w-xl leading-relaxed">
-            Building robust enterprise systems with Java & Spring Boot microservices, high performance Angular and React clients, and cloud-native deployments.
+            Building robust enterprise systems with Java & Spring Boot
+            microservices, high performance Angular and React clients, and
+            cloud-native deployments.
           </p>
 
           {/* Action Buttons with Neon Lime Glow */}
           <div className="mt-9 flex flex-wrap items-center gap-4">
-            
             {/* Primary Neon Green Action Button */}
             <a
               href="#contact"
@@ -98,13 +98,11 @@ export default function Hero() {
               <Download size={16} /> Resume
             </a>
           </div>
-
         </div>
 
         {/* Right Column: Perfect Circular Portrait */}
-{/* Right Column: Perfect Circular Portrait */}
+        {/* Right Column: Perfect Circular Portrait */}
         <div className="lg:w-5/12 flex justify-center relative">
-          
           {/* Subtle Ambient Backlight behind Circle */}
           <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-[#65a30d]/20 to-transparent blur-3xl scale-95 pointer-events-none" />
 
@@ -116,9 +114,7 @@ export default function Hero() {
               className="w-full h-full object-cover object-[center_15%] transition-transform duration-500 hover:scale-105"
             />
           </div>
-
         </div>
-
       </div>
 
       {/* =========================================================
@@ -133,19 +129,24 @@ export default function Hero() {
           {techLogos.map((tech, idx) => (
             <div
               key={idx}
-              className="flex flex-col items-center justify-center p-4 rounded-xl bg-[#111111] border border-neutral-800/80 hover:border-neutral-700 transition-colors"
+              className="group relative flex flex-col items-center justify-center p-4 rounded-xl bg-[#111111] border border-neutral-800/80 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-[#84cc16]/60 hover:bg-neutral-900/90 hover:shadow-[0_0_20px_rgba(132,204,22,0.12)] cursor-default overflow-hidden"
             >
-              <span className="text-sm font-bold text-neutral-200 tracking-wide">
+              {/* Subtle top lime ambient accent line on hover */}
+              <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-[#84cc16] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+              {/* Tech Name */}
+              <span className="text-sm font-bold text-neutral-200 tracking-wide group-hover:text-[#a3e635] transition-colors duration-200">
                 {tech.name}
               </span>
-              <span className="text-[11px] font-mono text-neutral-500 mt-0.5">
+
+              {/* Tech Tag */}
+              <span className="text-[11px] font-mono text-neutral-500 mt-0.5 group-hover:text-neutral-400 transition-colors duration-200">
                 {tech.tag}
               </span>
             </div>
           ))}
         </div>
       </div>
-
     </section>
   );
 }
