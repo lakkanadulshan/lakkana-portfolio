@@ -1,5 +1,5 @@
 import React from "react";
-import cvFile from "../assets/Lakkana_Dulshan_CV.pdf";
+import cvFile from "../assets/Lakkana_dulshan_software_engineering_cv.pdf";
 
 export default function Navbar() {
   const navLinks = [
@@ -38,7 +38,7 @@ export default function Navbar() {
         {/* Action Button */}
         <a
           href={cvFile}
-          download="Lakkana_Dulshan_CV.pdf"
+          download="Lakkana_dulshan_software_engineering_cv.pdf"
           className="flex items-center gap-2 px-4 py-2 bg-[#84cc16] text-black font-semibold rounded-md hover:bg-[#a3e635] transition-colors"
         >
           Resume
