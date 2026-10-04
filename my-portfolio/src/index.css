@@ -1,1 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Raleway:wght@500;600;700;800&display=swap');
 @import "tailwindcss";
+
+:root {
+	--background: 0 0% 4%;
+	--foreground: 0 0% 95%;
+	--card: 0 0% 8%;
+	--card-foreground: 0 0% 95%;
+	--muted: 0 0% 15%;
+	--muted-foreground: 0 0% 58%;
+	--primary: 90 100% 50%;
+	--primary-foreground: 0 0% 0%;
+	--border: 0 0% 17%;
+	--ring: 90 100% 50%;
+	--font-display: 'Bebas Neue', sans-serif;
+	--font-script: 'Playfair Display', serif;
+	--font-body: 'Inter', sans-serif;
+	--font-card-title: 'Raleway', sans-serif;
+	--glow-primary: 0 0 40px hsl(90 100% 50% / 0.18);
+	--glow-primary-strong: 0 0 70px hsl(90 100% 50% / 0.3);
+}
+
+html {
+	scroll-behavior: smooth;
+	background: hsl(var(--background));
+}
+
+body {
+	margin: 0;
+	min-width: 320px;
+	background:
+		radial-gradient(circle at 80% 0%, hsl(90 100% 50% / 0.07), transparent 28rem),
+		hsl(var(--background));
+	color: hsl(var(--foreground));
+	font-family: var(--font-body);
+	text-rendering: optimizeLegibility;
+}
+
+body::before {
+	position: fixed;
+	inset: 0;
+	z-index: -1;
+	background-image: linear-gradient(hsl(0 0% 100% / 0.025) 1px, transparent 1px),
+		linear-gradient(90deg, hsl(0 0% 100% / 0.025) 1px, transparent 1px);
+	background-size: 72px 72px;
+	content: '';
+	mask-image: linear-gradient(to bottom, black, transparent 70%);
+	pointer-events: none;
+}
+
+::selection {
+	background: hsl(var(--primary) / 0.28);
+	color: hsl(0 0% 100%);
+}
+
+::-webkit-scrollbar {
+	width: 9px;
+}
+
+::-webkit-scrollbar-track {
+	background: hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+	border: 2px solid hsl(var(--background));
+	border-radius: 999px;
+	background: hsl(var(--muted));
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: hsl(var(--primary) / 0.7);
+}
+
+h1,
+h2 {
+	font-family: var(--font-display);
+	font-weight: 400;
+	letter-spacing: 0.035em;
+}
+
+h3,
+h4 {
+	font-family: var(--font-card-title);
+}
+
+main > section {
+	position: relative;
+	isolation: isolate;
+}
+
+main > section:not(:first-child)::before {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: min(80%, 72rem);
+	height: 1px;
+	background: linear-gradient(90deg, transparent, hsl(var(--primary) / 0.3), transparent);
+	content: '';
+	transform: translateX(-50%);
+}
+
+header {
+	box-shadow: 0 18px 45px hsl(0 0% 0% / 0.32);
+}
+
+.glass-nav {
+	border-color: hsl(var(--primary) / 0.14) !important;
+	box-shadow: 0 0 0 1px hsl(0 0% 100% / 0.025), 0 18px 50px hsl(0 0% 0% / 0.36);
+}
+
+.nav-mark {
+	display: grid;
+	width: 2rem;
+	height: 2rem;
+	place-items: center;
+	border-radius: 999px;
+	background: hsl(var(--primary));
+	color: hsl(var(--primary-foreground));
+	font-family: var(--font-card-title);
+	font-size: 0.875rem;
+	font-weight: 800;
+}
+
+.hero-shell::before {
+	position: absolute;
+	top: 16%;
+	left: 4%;
+	width: 18rem;
+	height: 18rem;
+	border: 1px solid hsl(var(--primary) / 0.08);
+	border-radius: 999px;
+	content: '';
+	transform: translate(-50%, -50%);
+	box-shadow: 0 0 90px hsl(var(--primary) / 0.08);
+	pointer-events: none;
+}
+
+.hero-name {
+	color: hsl(var(--primary));
+	font-family: var(--font-script);
+	font-weight: 600;
+	text-shadow: 0 0 35px hsl(var(--primary) / 0.24);
+}
+
+.hero-portrait {
+	border-color: hsl(var(--primary) / 0.32) !important;
+	box-shadow: 0 0 0 10px hsl(0 0% 100% / 0.015), 0 0 70px hsl(var(--primary) / 0.16) !important;
+}
+
+header nav a {
+	position: relative;
+	transition: color 180ms ease;
+}
+
+header nav a::after {
+	position: absolute;
+	right: 0;
+	bottom: -0.65rem;
+	left: 0;
+	height: 1px;
+	background: hsl(var(--primary));
+	content: '';
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform 180ms ease;
+}
+
+header nav a:hover::after,
+header nav a:focus-visible::after {
+	transform: scaleX(1);
+	transform-origin: left;
+}
+
+button,
+a,
+input,
+textarea {
+	-webkit-tap-highlight-color: transparent;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+	outline: 2px solid hsl(var(--ring));
+	outline-offset: 3px;
+}
+
+@media (max-width: 640px) {
+	body::before {
+		background-size: 48px 48px;
+	}
+}

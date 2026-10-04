@@ -10,7 +10,8 @@ import ScrollProgressRoute from './components/ScrollProgressRoute';
 
 export default function App() {
   return (
-<div className="min-h-screen w-full bg-[#0a0a0a] text-neutral-100 selection:bg-[#84cc16]/30 selection:text-[#a3e635]">      <Navbar />
+    <div className="dark min-h-screen w-full bg-[#0a0a0a] text-neutral-100 selection:bg-[#84cc16]/30 selection:text-[#a3e635]">
+      <Navbar />
       <main>
         <Hero />
         <About />

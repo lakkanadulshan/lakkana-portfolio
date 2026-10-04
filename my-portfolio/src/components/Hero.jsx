@@ -5,7 +5,7 @@ import profileImg from "../assets/my-photo.jpeg";
 export default function Hero() {
   const roles = [
     "Full-Stack Engineer",
-    "Java & Spring Boot Specialist",
+    "Java & Spring Boot Enthusiast",
     "MERN Stack Developer",
     "Angular & React Enthusiast",
     "WordPress Developer",
@@ -47,14 +47,14 @@ export default function Hero() {
   ];
 
   return (
-    <section className="relative bg-[#0a0a0a] text-white pt-36 pb-20 px-6 sm:px-10 max-w-7xl mx-auto min-h-screen flex flex-col justify-between overflow-hidden">
+    <section className="hero-shell relative bg-[#0a0a0a] text-white pt-32 pb-20 px-6 sm:px-10 max-w-7xl mx-auto min-h-screen flex flex-col justify-between overflow-hidden">
       {/* =========================================================
           HERO MAIN CONTENT (SPLIT LAYOUT)
       ========================================================== */}
       <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12 lg:gap-16 w-full my-auto">
         {/* Left Column: Heading, Subtitle & Action Buttons */}
         <div className="lg:w-7/12 flex flex-col items-start text-left z-10">
-          <h1 className="text-5xl sm:text-7xl font-extrabold tracking-tight text-white leading-[1.08]">
+          <h1 className="hero-name text-5xl sm:text-7xl tracking-tight leading-[1.08]">
             Lakkana Dulshan
           </h1>
 
@@ -74,40 +74,31 @@ export default function Hero() {
             cloud-native deployments.
           </p>
 
-          {/* Action Buttons with Neon Lime Glow */}
+          {/* Action Buttons with Neon Lime Glow (Temporarily commented for screenshot) */}
+          
           <div className="mt-9 flex flex-wrap items-center gap-4">
-            {/* Primary Neon Green Action Button */}
             <a
               href="#contact"
               className="group inline-flex items-center gap-2.5 px-8 py-4 rounded-xl bg-[#65a30d] hover:bg-[#84cc16] text-white font-bold text-base transition-all duration-300 shadow-[0_0_35px_rgba(101,163,13,0.55)] hover:shadow-[0_0_50px_rgba(132,204,22,0.8)] hover:scale-[1.02]"
             >
-              Let’s get started
+              Let’s work together
               <ArrowRight
                 size={18}
                 className="transition-transform duration-200 group-hover:translate-x-1"
               />
             </a>
 
-            {/* Secondary CV Button */}
-            <a
-              href="/resume.pdf"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-4 rounded-xl border border-neutral-800 hover:border-neutral-600 bg-neutral-900/60 hover:bg-neutral-800 text-neutral-300 text-sm font-semibold transition-all"
-            >
-              <Download size={16} /> Resume
-            </a>
-          </div>
+          </div> 
+         
         </div>
 
         {/* Right Column: Perfect Circular Portrait */}
-        {/* Right Column: Perfect Circular Portrait */}
-        <div className="lg:w-5/12 flex justify-center relative">
+        <div className="hero-portrait-wrap lg:w-5/12 flex justify-center relative">
           {/* Subtle Ambient Backlight behind Circle */}
           <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-[#65a30d]/20 to-transparent blur-3xl scale-95 pointer-events-none" />
 
           {/* Circular Frame */}
-          <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-[380px] lg:h-[380px] rounded-full overflow-hidden border-2 border-neutral-800/80 shadow-2xl bg-neutral-900 flex items-center justify-center">
+          <div className="hero-portrait relative w-64 h-64 sm:w-80 sm:h-80 lg:w-[380px] lg:h-[380px] rounded-full overflow-hidden border-2 border-neutral-800/80 shadow-2xl bg-neutral-900 flex items-center justify-center">
             <img
               src={profileImg}
               alt="Lakkana Dulshan"
@@ -131,15 +122,12 @@ export default function Hero() {
               key={idx}
               className="group relative flex flex-col items-center justify-center p-4 rounded-xl bg-[#111111] border border-neutral-800/80 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-[#84cc16]/60 hover:bg-neutral-900/90 hover:shadow-[0_0_20px_rgba(132,204,22,0.12)] cursor-default overflow-hidden"
             >
-              {/* Subtle top lime ambient accent line on hover */}
               <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-[#84cc16] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-              {/* Tech Name */}
               <span className="text-sm font-bold text-neutral-200 tracking-wide group-hover:text-[#a3e635] transition-colors duration-200">
                 {tech.name}
               </span>
 
-              {/* Tech Tag */}
               <span className="text-[11px] font-mono text-neutral-500 mt-0.5 group-hover:text-neutral-400 transition-colors duration-200">
                 {tech.tag}
               </span>

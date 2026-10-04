@@ -15,12 +15,6 @@ export default function Contact() {
     e.preventDefault();
     setStatus(null);
 
-    if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
-      console.error("EmailJS environment variables are missing.");
-      setStatus('config-error');
-      return;
-    }
-
     setLoading(true);
 
     emailjs

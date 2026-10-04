@@ -11,21 +11,22 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0a]/80 backdrop-blur-md border-b border-neutral-900">
-      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+    <header className="glass-nav fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[calc(100%-2rem)] max-w-6xl rounded-full bg-[#080908]/75 backdrop-blur-xl border border-neutral-800/80">
+      <div className="max-w-7xl mx-auto px-4 sm:px-7 h-14 flex items-center justify-between">
         
         {/* Logo */}
-        <a href="#" className="text-xl font-bold tracking-tight text-white flex items-center gap-1.5">
-          Lakkana<span className="w-1.5 h-1.5 rounded-full bg-[#84cc16]"></span>
+        <a href="#" className="text-xl font-semibold tracking-tight text-white flex items-center gap-2">
+          <span className="nav-mark">L</span>
+          <span className="hidden sm:inline">Lakkana</span>
         </a>
 
         {/* Links */}
-        <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-neutral-400">
+        <nav className="hidden md:flex items-center gap-1 text-sm font-medium text-neutral-400">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="hover:text-[#a3e635] transition-colors"
+              className="rounded-full px-3 py-2 hover:text-[#a3e635] transition-colors"
             >
               {link.name}
             </a>
@@ -37,7 +38,7 @@ export default function Navbar() {
           href="/resume.pdf"
           target="_blank"
           rel="noreferrer"
-          className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#65a30d] hover:bg-[#84cc16] text-white font-semibold text-xs tracking-wide transition-all shadow-[0_0_20px_rgba(101,163,13,0.35)]"
+          className="flex items-center gap-2 px-4 py-2 rounded-full border border-[#84cc16]/35 hover:border-[#84cc16]/70 bg-[#84cc16]/10 hover:bg-[#84cc16]/20 text-[#a3e635] font-semibold text-xs tracking-wide transition-all"
         >
           <Download size={14} /> Resume
         </a>
