@@ -1,5 +1,4 @@
 import React from "react";
-import { Download } from "lucide-react";
 import cvFile from "../assets/Lakkana_Dulshan_CV.pdf";
 
 export default function Navbar() {
@@ -43,11 +42,7 @@ export default function Navbar() {
           className="flex items-center gap-2 px-4 py-2 bg-[#84cc16] text-black font-semibold rounded-md hover:bg-[#a3e635] transition-colors"
         >
           Resume
-          git add .
-        git commit -m "Update portfolio styling and CV download"
-        git push origin main        git add .
-        git commit -m "Update portfolio styling and CV download"
-        git push origin main      </a>
+        </a>
       </div>
     </header>
   );
