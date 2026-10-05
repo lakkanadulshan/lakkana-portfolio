@@ -121,20 +121,6 @@ header {
 	font-weight: 800;
 }
 
-.hero-shell::before {
-	position: absolute;
-	top: 16%;
-	left: 4%;
-	width: 18rem;
-	height: 18rem;
-	border: 1px solid hsl(var(--primary) / 0.08);
-	border-radius: 999px;
-	content: '';
-	transform: translate(-50%, -50%);
-	box-shadow: 0 0 90px hsl(var(--primary) / 0.08);
-	pointer-events: none;
-}
-
 .hero-name {
 	color: hsl(var(--primary));
 	font-family: var(--font-script);
